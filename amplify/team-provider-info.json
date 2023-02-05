@@ -24,6 +24,12 @@
       },
       "api": {
         "typescriptfunction": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2t9xuk600mnc1",
+          "type": "cicd"
+        }
       }
     }
   }
