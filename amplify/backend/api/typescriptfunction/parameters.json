@@ -1,0 +1,6 @@
+{
+  "AppSyncApiName": "typescriptfunction",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthModeLastUpdated": "2023-02-04T15:17:20.904Z"
+}

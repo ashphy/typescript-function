@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-typescriptfunction-dev-234848-authRole",
+      "UnauthRoleArn": "arn:aws:iam::285224135196:role/amplify-typescriptfunction-dev-234848-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::285224135196:role/amplify-typescriptfunction-dev-234848-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-typescriptfunction-dev-234848-deployment",
+      "UnauthRoleName": "amplify-typescriptfunction-dev-234848-unauthRole",
+      "StackName": "amplify-typescriptfunction-dev-234848",
+      "StackId": "arn:aws:cloudformation:us-east-1:285224135196:stack/amplify-typescriptfunction-dev-234848/0a0acec0-a49b-11ed-8280-0a087a5c1a77",
+      "AmplifyAppId": "d2t9xuk600mnc1"
+    },
+    "categories": {
+      "function": {
+        "TypeScriptFunction": {
+          "deploymentBucketName": "amplify-typescriptfunction-dev-234848-deployment",
+          "s3Key": "amplify-builds/TypeScriptFunction-6853422b4944344f4c52-build.zip"
+        },
+        "test": {
+          "deploymentBucketName": "amplify-typescriptfunction-dev-234848-deployment",
+          "s3Key": "amplify-builds/test-624a766a4d4f64567177-build.zip"
+        }
+      },
+      "api": {
+        "typescriptfunction": {}
+      }
+    }
+  }
+}
