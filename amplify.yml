@@ -5,7 +5,8 @@ backend:
       commands:
         - "node -v"
         - "which node"
-        - "which tsc"
+        - "npm ls"
+        - "pwd"
         - "npx tsc -v"
         - "# Execute Amplify CLI with the helper script"
         - amplifyPush --simple
