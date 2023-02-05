@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "amplify:TypeScriptFunction": "cd amplify/backend/function/TypeScriptFunction && tsc -noEmit -p ./tsconfig.json && esbuild lib/index.ts --outdir=src --bundle --minify --sourcemap && cd -"
+    "amplify:TypeScriptFunction": "cd amplify/backend/function/TypeScriptFunction && npm ci && tsc -noEmit -p ./tsconfig.json && esbuild lib/index.ts --outdir=src --bundle --minify --sourcemap && cd -"
   },
   "dependencies": {
     "aws-amplify": "^5.0.12",
