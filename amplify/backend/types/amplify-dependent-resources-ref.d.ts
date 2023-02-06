@@ -1,8 +1,9 @@
 export type AmplifyDependentResourcesAttributes = {
   "api": {
-    "typescriptfunction": {
-      "GraphQLAPIEndpointOutput": "string",
-      "GraphQLAPIIdOutput": "string"
+    "TypeScriptAPI": {
+      "ApiId": "string",
+      "ApiName": "string",
+      "RootUrl": "string"
     }
   },
   "function": {

@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "./runtimeConfig": "./runtimeConfig.browser",
+      find: "./runtimeConfig",
+      replacement: "./runtimeConfig.browser",
     },
   },
 });

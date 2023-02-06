@@ -1,17 +1,18 @@
 {
   "api": {
-    "typescriptfunction": {
-      "dependsOn": [],
-      "output": {
-        "authConfig": {
-          "additionalAuthenticationProviders": [],
-          "defaultAuthentication": {
-            "authenticationType": "AWS_IAM"
-          }
+    "TypeScriptAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "TypeScriptFunction"
         }
-      },
+      ],
       "providerPlugin": "awscloudformation",
-      "service": "AppSync"
+      "service": "API Gateway"
     }
   },
   "function": {

@@ -22,9 +22,6 @@
           "s3Key": "amplify-builds/test-624a766a4d4f64567177-build.zip"
         }
       },
-      "api": {
-        "typescriptfunction": {}
-      },
       "hosting": {
         "amplifyhosting": {
           "appId": "d2t9xuk600mnc1",

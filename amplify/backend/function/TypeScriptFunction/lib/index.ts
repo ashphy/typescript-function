@@ -1,24 +1,21 @@
 import * as AWS from "aws-sdk";
-import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
 
-/**
- * @type {import('@types/aws-lambda').APIGatewayProxyHandler}
- */
+import { Context, APIGatewayProxyResult, APIGatewayEvent } from "aws-lambda";
+
 export const handler = async (
-  event: APIGatewayProxyEvent
+  event: APIGatewayEvent,
+  context: Context
 ): Promise<APIGatewayProxyResult> => {
-  console.log(`EVENT: ${JSON.stringify(event)}`);
+  console.log(`Event: ${JSON.stringify(event, null, 2)}`);
+  console.log(`Context: ${JSON.stringify(context, null, 2)}`);
 
   const s3 = new AWS.S3({ apiVersion: "2006-03-01" });
-  console.log(s3);
+  console.log("[S3]", s3.apiVersions);
 
   return {
     statusCode: 200,
-    //  Uncomment below to enable CORS requests
-    //  headers: {
-    //      "Access-Control-Allow-Origin": "*",
-    //      "Access-Control-Allow-Headers": "*"
-    //  },
-    body: JSON.stringify("Hello from Lambda!"),
+    body: JSON.stringify({
+      message: "hello world",
+    }),
   };
 };

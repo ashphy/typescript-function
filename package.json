@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "amplify:TypeScriptFunction": "cd amplify/backend/function/TypeScriptFunction && npm ci && npm ls && tsc -noEmit -p ./tsconfig.json && esbuild lib/index.ts --outdir=src --bundle --minify --sourcemap && cd -"
+    "amplify:TypeScriptFunction": "cd amplify/backend/function/TypeScriptFunction && npm ci && npm ls && tsc -noEmit -p ./tsconfig.json && esbuild lib/index.ts --external:aws-sdk --platform=node --target=es2020 --minify --outdir=src --bundle --sourcemap && cd -"
   },
   "dependencies": {
     "aws-amplify": "^5.0.12",
